@@ -1,114 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-classe</title>
-    <script src="https://kit.fontawesome.com/3f2b47ea81.js" crossorigin="anonymous"></script>
-    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <style>
-      .fal {
-        color: aquamarine;
-      }
-      .side-nav {
-        height: 100vh;
-        background: #FAFFC1;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-classe</title>
 
-      }
-      .image {
-      
-        border-radius: 50px;
-     
-      }
-      .container-image {
-        width: 30vw;
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <style>
+    .fal {
+      color: gray;
+    }
 
-      }
-      .logo {
-        height: 20px;
-      }
-    </style>
+    .side-nav {
+      height: 100vh;
+      background: #FAFFC1;
+      margin: 0px !important;
+    }
+
+    .image {
+      border-radius: 50%;
+      width: 8vw;
+      height: 15vh;
+    }
+
+    .logo {
+      height: 20px;
+    }
+
+    .nav-link:hover {
+      background: #00C1FE;
+    }
+
+    .return {
+      position: absolute;
+      left: 18%;
+    }
+  </style>
 </head>
-<body> 
-  <!-- side bar -->
-      <div class=" row position-sticky pt-md-2 col-2  side-nav">
-        <div class="logo">
-          <h2 class="border-start border-info border-5 fw-bold ms-5">
-            E-classe
-          </h2>
-        </div>
-        <div>
-        <!-- IMAGE  -->
-        <div class="container-image">
-          <img src="ressources/Image 1.png" class="  w-25 h-25 image" alt="...">
-        </div>
-        <p class="text-center fw-bold" > admin name </p>
-        <p class="text-center text-info"> Admin</p>
-       </div>
-        <ul class="nav flex-column ">
-            <li class="nav-item nav justify-content-center">
-              <a class="nav-link a text-dark" aria-current="page" href="#">
-                <svg xmlns="http://www.wctive3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                <span class="ml-2">Home</span>
-              </a>
-            </li>
-            <li class="nav-item nav justify-content-center">
-              <a class="nav-link text-dark" href="#">
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                <span class="ml-2">Course</span>
-              </a>
-            </li>
-            <li class="nav-item nav justify-content-center">
-              <a class="nav-link text-dark" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                <span class="ml-2">Students</span>
-              </a>
-            </li>
-            <li class="nav-item nav justify-content-center ">
-              <a class="nav-link text-dark" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                <span class="ml-2">Payment</span>
-              </a>
-            </li>
-            <li class="nav-item nav justify-content-center">
-              <a class="nav-link text-dark" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                <span class="ml-2">Reports</span>
-              </a>
-            </li>
-            <li class="nav-item  nav justify-content-center">
-              <a class="nav-link text-dark" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                <span class="ml-2">Settings</span>
-              </a>
-            </li>
-          </ul>
-      </div>
-    <!-- header  -->
-    <div class="m-1  navbar navbar-light  bg-dark p-2 col-8 d-flex justify-content-end ">
- 
-        
-        <!-- SEARSH -->
-        <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
-            <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
-        </div>
-        <div>
-          <i class="fal fa-bell"></i>
-
-        </div>
+<body>
+  <!-- header  -->
+  <div class=" position-absolute  navbar navbar-light  bg-light p-2 col-12 d-flex justify-content-end ">
+    <i class="fal fa-bell return "></i>
+    <!-- SEARSH -->
+    <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
+      <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
     </div>
+    <div>
+      <i class="fal fa-bell"></i>
+
+    </div>
+  </div>
+  <!-- side bar -->
+  <div class="row position-sticky pt-md-2 col-2  side-nav">
+    <div class="logo">
+      <h2 class="border-start border-info border-5 fw-bold ms-5">
+        E-classe
+      </h2>
+    </div>
+    <div class="d-inline-flex flex-column  justify-content-center">
+      <!-- IMAGE  -->
+      <!-- <div class="container-image "> -->
+      <img src="ressources/Image 1.png" class="ms-5 image" alt="...">
+      <!-- </div> -->
+      <p class="text-center fw-bold"> admin name </p>
+      <p class="text-center text-info"> Admin</p>
+    </div>
+    <ul class="nav flex-column ">
+      <li class="nav-item nav justify-content-center">
+        <a class="nav-link a text-dark  px-5" aria-current="page" href="#">
+          <i class="fas fa-home me-4"></i>
+
+          <span class="ml-2">Home</span>
+        </a>
+      </li>
+      <li class="nav-item nav justify-content-center">
+        <a class="nav-link text-dark px-5" href="#">
+          <i class="far fa-bookmark me-4"></i>
+          <span class="ml-2">Course</span>
+        </a>
+      </li>
+      <li class="nav-item nav justify-content-center">
+        <a class="nav-link text-dark px-5" href="#">
+          <i class="far fa-graduation-cap me-3"></i>
+          <span class="ml-2">Students</span>
+        </a>
+      </li>
+      <li class="nav-item nav justify-content-center ">
+        <a class="nav-link text-dark px-5" href="#">
+          <i class="far fa-usd-square me-3"></i>
+
+          <span class="">Payment</span>
+        </a>
+      </li>
+      <li class="nav-item nav justify-content-center">
+        <a class="nav-link text-dark px-5 " href="#">
+
+          <i class="far fa-file-chart-line me-4"></i>
+          <span class="">Reports</span>
+        </a>
+      </li>
+      <li class="nav-item  nav justify-content-center">
+        <a class="nav-link text-dark px-5" href="#">
+          <i class="fal fa-sliders-v-square me-3"></i>
+
+          <span class="">Settings</span>
+        </a>
+      </li>
+    </ul>
+    <div class="d-flex ">
+      <i class="fal fa-sign-out-alt mt-1 me-3"></i>
+      <P>
+        log out
+      </P>
+    </div>
+  </div>
+
+  <div>
+    <div class="card bg-dark position-absolute start- w-25 h-25">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, labore modi non praesentium vitae, repudiandae
+      quisquam ducimus iusto neque dolorem laudantium, magnam ad doloremque dicta quaerat alias eos molestias voluptate.
+    </div>
+  </div>
 
 
-    
 
 
-     
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

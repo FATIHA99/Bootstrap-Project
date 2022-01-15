@@ -20,7 +20,7 @@
     }
 
     .sign-in {
-/* 
+      /* 
       width: 35vw; */
       height: 85vh;
       border-radius: 20px;
@@ -43,43 +43,46 @@
 </head>
 
 <body class="d-flex justify-content-center align-items-center ">
+
   <!-- w-25 rounded -->
   <div class="sign-in container   p-3 bg-white col-7  col-lg-4">
+    
+      <form class="formulaire ps-3 pe-3">
 
-    <form class="formulaire ps-3 pe-3">
+        <div class="">
+          <h1 class="border-start border-info border-5 fw-bold ms-5">
+            E-classe
+          </h1>
+        </div>
 
-      <div class="">
-        <h1 class="border-start border-info border-5 fw-bold ms-5">
-          E-classe
-        </h1>
-      </div>
+        <div class="text-center">
+          <p class="fw-bold"> SIGN IN</p>
+          <P class="text-center fs-6 fw-light">Enter your credentials to access your account</P>
+        </div>
 
-      <div class="text-center">
-        <p class="fw-bold"> SIGN IN</p>
-        <P class="text-center fs-6 fw-light">Enter your credentials to access your account</P>
-      </div>
+        <div class="mb-1">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" placeholder="Enter your email" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
 
-      <div class="mb-1">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" placeholder="Enter your email" id="exampleInputEmail1"
-          aria-describedby="emailHelp">
-
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control  " placeholder="Enter your password" id="exampleInputPassword1">
-      </div>
-      <div class="d-grid gap-2">
-        <button class="btn btn-info  text-light" type="button">SIGN IN</button>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control  " placeholder="Enter your password" id="exampleInputPassword1">
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-info  text-light" type="button">SIGN IN</button>
 
 
-      </div>
+        </div>
 
-      <p class="text-muted text-center">
-        Forgot your password? <a href="#" class="text-decoration-none">Reset Password</a>.
-      </p>
-    </form>
+        <p class="text-muted text-center">
+          Forgot your password? <a href="#" class="text-decoration-none">Reset Password</a>.
+        </p>
+      </form>
+   
   </div>
+
 </body>
 
 </html>
