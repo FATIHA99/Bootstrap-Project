@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashbord</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Students</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/DashStyle.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+
     <!-- header  -->
     <div class="  position-absolute navbar navbar-light  bg-light p-2 col-12  d-flex justify-content-end ">
 
@@ -26,6 +27,8 @@
         <i class="fal fa-bell"></i>
 
     </div>
+
+
     <div class="container-fluid position-sticky ">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3  col-lg-2 col-xl-2 px-sm-2 px-0 side-nav">
@@ -92,50 +95,20 @@
                         </P>
                         <i class="fal fa-sign-out-alt mt-1 ms-3"></i>
                     </div>
+
                 </div>
             </div>
-            <div class="col py-3">
-                <!-- les cartes  -->
-                <div class="cards row gap-3 justify-content-center mt-5">
-                    <div class=" carditems carditems--blue col-md-3  col-sm-2   position-relative">
-                        <div class="cardstudents d-flex flex-column gap-2 mt-3">
-                            <i class="far fa-graduation-cap h3"></i>
-                            <span>Students</span>
-                        </div>
-                        <div class="cardnbr-students">
-                            <span class="h5 fw-bold" id="nbr">243</span>
-                        </div>
-                    </div>
 
-                    <div class=" carditems carditems--rose col-md-3  col-sm-2  position-relative">
-                        <div class="cardCourse d-flex flex-column gap-2 mt-3">
-                            <i class="fal fa-bookmark h3"></i>
-                            <span>Course</span>
-                        </div>
-                        <div class="cardnbr-course">
-                            <span class="h5 fw-bold" id="nbr">13</span>
-                        </div>
-                    </div>
 
-                    <div class=" carditems carditems--yellow col-md-3  col-sm-2  position-relative">
-                        <div class="cardpayments d-flex flex-column gap-2 mt-3">
-                            <i class="fal fa-usd-square h3"></i>
-                            <span>Payments</span>
-                        </div>
-                        <div class="cardpayments">
-                            <span class="h5 fw-bold" id="nbr">DHS 556,000</span>
-                        </div>
-                    </div>
 
-                    <div class="carditems carditems--gradient col-md-3  col-m-2 position-relative">
-                        <div class="card__users d-flex flex-column gap-2 mt-3">
-                            <i class="fal fa-user h3"></i>
-                            <span>Users</span>
-                        </div>
-                        <span class="h5 fw-bold" id="nbr">3</span>
-                    </div>
-                </div>
+            <div class=" border-bottom-1   position-absolute top-50 bg-light">
+                <span> Student List </span>
+                <i class="fal fa-sort-circle  "></i>
+
+                <button type="button" class="btn btn-info w-25 ">Info</button>
             </div>
+
+
         </div>
     </div>
 
