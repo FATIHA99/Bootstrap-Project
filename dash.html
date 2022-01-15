@@ -22,7 +22,7 @@
     }
 
     .image {
-      border-radius: 50%;
+    
       width: 8vw;
       height: 15vh;
     }
@@ -39,21 +39,68 @@
       position: absolute;
       left: 18%;
     }
+    /* .card-one {
+      background-color: #F0F9FF;
+      width: 15%;
+      height: 15%;
+    } */
+    .cards .carditems{
+    border-radius: 8px;
+    width: 220px;
+    height: 150px;
+}
+.cards {
+  width: 80%;
+  position: absolute;
+  top: 40px;
+  left: 20vw;
+}
+.carditems--blue{
+    background-color:#F0F9FF;
+}
+.carditems--blue i{
+    color: #74C1ED;
+}
+.carditems--rose{
+    background-color:#FEF6FB;
+}
+.carditems--rose i{
+    color:#EE95C5;
+}
+.carditems--yellow{
+    background-color:#FEFBEC;
+}
+.carditems--yellow i{
+    color:#00C1FE;
+}
+.carditems--gradient{
+    background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+.card__items--gradient i{
+    color:#FFFFFF;
+}
+#nbr{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+   
   </style>
 </head>
 
 <body>
   <!-- header  -->
   <div class=" position-absolute  navbar navbar-light  bg-light p-2 col-12 d-flex justify-content-end ">
-    <i class="fal fa-bell return "></i>
+ 
+    <i class="fal fa-caret-circle-down fa-rotate-90 return"></i>
     <!-- SEARSH -->
     <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
-      <input class="form-control form-control-dark" type="text" placeholder="Search" aria-label="Search">
+      <input class=" rounded form-control form-control-dark me-3" type="text" placeholder="Search" aria-label="Search">
     </div>
-    <div>
+
       <i class="fal fa-bell"></i>
 
-    </div>
   </div>
   <!-- side bar -->
   <div class="row position-sticky pt-md-2 col-2  side-nav">
@@ -65,7 +112,7 @@
     <div class="d-inline-flex flex-column  justify-content-center">
       <!-- IMAGE  -->
       <!-- <div class="container-image "> -->
-      <img src="ressources/Image 1.png" class="ms-5 image" alt="...">
+      <img src="ressources/Image 1.png" class="ms-5  rounded-circle image" alt="...">
       <!-- </div> -->
       <p class="text-center fw-bold"> admin name </p>
       <p class="text-center text-info"> Admin</p>
@@ -120,15 +167,58 @@
     </div>
   </div>
 
-  <div>
-    <div class="card bg-dark position-absolute start- w-25 h-25">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, labore modi non praesentium vitae, repudiandae
-      quisquam ducimus iusto neque dolorem laudantium, magnam ad doloremque dicta quaerat alias eos molestias voluptate.
+  <!-- <div class="row">
+    <div class=" position-absolute col-4  card-one">
+      <i class="far fa-graduation-cap me-3 text-info d-block"></i>
+      Students
     </div>
-  </div>
+    <div class=" position-absolute col-4 card-two">
+      <i class="far fa-graduation-cap me-3 text-info d-block"></i>
+      Students
+    </div>
+  </div> -->
 
 
 
+  <div class="cards row gap-3 justify-content-center mt-5">
+    <div class=" carditems carditems--blue col-md-3 position-relative">
+        <div class="cardstudents d-flex flex-column gap-2 mt-3">
+            <i class="far fa-graduation-cap h3"></i>
+            <span>Students</span>
+        </div>
+        <div class="cardnbr-students">
+            <span class="h5 fw-bold" id="nbr">243</span>
+        </div>
+    </div>
+
+    <div class=" carditems carditems--rose col-md-3 position-relative">
+        <div class="cardCourse d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-bookmark h3"></i>
+            <span>Course</span>
+        </div>
+        <div class="cardnbr-course">
+            <span class="h5 fw-bold" id="nbr">13</span>
+        </div>
+    </div>
+
+    <div class=" carditems carditems--yellow col-md-3 position-relative">
+        <div class="cardpayments d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-usd-square h3"></i>
+            <span>Payments</span>
+        </div>
+        <div class="cardpayments">
+            <span class="h5 fw-bold" id="nbr">DHS 556,000</span>
+        </div>
+    </div>
+
+    <div class="carditems carditems--gradient col-md-3 position-relative">
+        <div class="card__users d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-user h3"></i>
+            <span>Users</span>
+        </div>
+        <span class="h5 fw-bold" id="nbr">3</span>
+    </div>
+</div>
 
 
 
