@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/DashStyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+   <!-- header  -->
+   <div class=" position-absolute  navbar navbar-light  bg-light p-2 col-12 d-flex justify-content-end ">
+ 
+    <i class="fal fa-caret-circle-down fa-rotate-90 return"></i>
+    <!-- SEARSH -->
+    <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
+      <input class=" rounded form-control form-control-dark me-3" type="text" placeholder="Search" aria-label="Search">
+    </div>
+
+      <i class="fal fa-bell"></i>
+
+  </div>
+<div class="container-fluid position-sticky">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 side-nav">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
+  
+                <div class="logo">
+                    <h2 class="border-start border-info border-5 fw-bold ">
+                      E-classe
+                    </h2>
+                  </div>
+                  <div class="d-inline-flex flex-column  justify-content-center">
+                    <!-- IMAGE  -->
+                    <!-- <div class="container-image "> -->
+                    <img src="ressources/Image 1.png" class="ms-3 mt-5  rounded-circle image" alt="...">
+                    <!-- </div> -->
+                    <p class="text-center fw-bold"> admin name </p>
+                    <p class="text-center text-info"> Admin</p>
+                  </div> 
+
+                  <!-- ------------------------------------------------------------------- -->
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li class="nav-item">
+                       
+                        <a href="#" class="nav-link align-middle px-0 text-dark">
+                            <i class="fas fa-home me-4"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                            <i class="far fa-bookmark me-4"></i> <span class="ms-1 d-none d-sm-inline">Course</span> </a>
+                      
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle text-dark">
+                            <i class="far fa-graduation-cap me-3"></i><span class="ms-1 d-none d-sm-inline">Students</span></a>
+                    </li>
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark ">
+                            <i class="far fa-usd-square me-3"></i> <span class="ms-1 d-none d-sm-inline">Payment</span></a>
+                      
+                    </li>
+                    <li>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                            <i class="far fa-file-chart-line me-4"></i> <span class="ms-1 d-none d-sm-inline">Reports</span> </a>
+                       
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-0 align-middle text-dark">
+                            <i class="fal fa-sliders-v-square me-3"></i> <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
+                    </li>
+                </ul>
+                
+             
+                <div class="d-flex text-dark">
+                    
+                    <P>
+                      Log out
+                    </P>
+                    <i class="fal fa-sign-out-alt mt-1 ms-3"></i>
+                  </div>
+            </div>
+        </div>
+        <div class="col py-3">
+           <!-- les cartes  -->
+  <div class="cards row gap-3 justify-content-center mt-5">
+    <div class=" carditems carditems--blue col-md-3   position-relative">
+        <div class="cardstudents d-flex flex-column gap-2 mt-3">
+            <i class="far fa-graduation-cap h3"></i>
+            <span>Students</span>
+        </div>
+        <div class="cardnbr-students">
+            <span class="h5 fw-bold" id="nbr">243</span>
+        </div>
+    </div>
+
+    <div class=" carditems carditems--rose col-md-3 position-relative">
+        <div class="cardCourse d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-bookmark h3"></i>
+            <span>Course</span>
+        </div>
+        <div class="cardnbr-course">
+            <span class="h5 fw-bold" id="nbr">13</span>
+        </div>
+    </div>
+
+    <div class=" carditems carditems--yellow col-md-3 position-relative">
+        <div class="cardpayments d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-usd-square h3"></i>
+            <span>Payments</span>
+        </div>
+        <div class="cardpayments">
+            <span class="h5 fw-bold" id="nbr">DHS 556,000</span>
+        </div>
+    </div>
+
+    <div class="carditems carditems--gradient col-md-3 position-relative">
+        <div class="card__users d-flex flex-column gap-2 mt-3">
+            <i class="fal fa-user h3"></i>
+            <span>Users</span>
+        </div>
+        <span class="h5 fw-bold" id="nbr">3</span>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
