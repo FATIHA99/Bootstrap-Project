@@ -17,11 +17,11 @@
   }
 
  
-  .nav-item:hover {
+  /* .nav-item:hover {
     background: #00C1FE;
   
   }
-  
+   */
 
   /* .return {
     position: absolute;
@@ -67,13 +67,19 @@
         width: 98%;
     }
 }
+@media screen and (max-width: 576px) {
+  .log-out {
+background-color: red;
 
+  }
+  .icon-out {
+    color: aliceblue;
+  }
+}
 
+.table-head  {
+  color: #ACACAC;
+  font-size: 12px; 
+}
 
-/* --------------- student  */
-/* .main-container {
-    left: 17%;
-  
-    top: 9%;
-} */
 
