@@ -14,7 +14,7 @@
 
 <body class="bg-light">
     <!-- header  -->
-   
+
     <div class="container-fluid position-sticky ">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3  col-lg-2 col-xl-2 px-sm-2 px-0 side-nav">
@@ -37,36 +37,36 @@
                     <!-- ---------------------- SIDE BAR --------------------------------------------- -->
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
                         id="menu">
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
 
                             <a href="#" class="nav-link  align-middle px-0 text-dark">
                                 <i class="fas fa-home me-4"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
                             </a>
                         </li>
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
                             <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
                                 <i class="far fa-bookmark me-4"></i> <span class="ms-1 d-none d-sm-inline">Course</span>
                             </a>
 
                         </li>
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
                             <a href="#" class="nav-link px-0 align-middle text-dark">
                                 <i class="far fa-graduation-cap me-3"></i><span
                                     class="ms-1 d-none d-sm-inline">Students</span></a>
                         </li>
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
                             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark ">
                                 <i class="far fa-usd-square me-3"></i> <span
                                     class="ms-1 d-none d-sm-inline">Payment</span></a>
 
                         </li>
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
                                 <i class="far fa-file-chart-line me-4"></i> <span
                                     class="ms-1 d-none d-sm-inline">Reports</span> </a>
 
                         </li>
-                        <li class="nav-item pe-5">
+                        <li class="nav-item ">
                             <a href="#" class="nav-link px-0 align-middle text-dark">
                                 <i class="fal fa-sliders-v-square me-3"></i> <span
                                     class="ms-1 d-none d-sm-inline">Settings</span> </a>
@@ -76,109 +76,121 @@
 
                     <div class="d-flex text-dark mt-5">
 
-                        <P>
+                        <P class="  d-none   d-sm-block">
                             Log out
                         </P>
-                        <i class="fal fa-sign-out-alt mt-1 ms-3"></i>
+                        <button type="button" class="btn log-out  btn-sm    ">
+                        <i class="fal fa-sign-out-alt mb-0  mb-sm-4    mx-3 pl-sm-0 icon-out  "></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="col p-0 ">  <!-- -----------------------  content   ---------------------- -->
+            <div class="col p-0 ">
+                <!-- -----------------------  content   ---------------------- -->
                 <!-- header -->
                 <div class=" navbar navbar-light  bg-white  col-12  d-flex justify-content-between  px-3">
 
                     <i class="fal fa-caret-circle-down fa-rotate-90 return"></i>
-            
+
                     <!-- SEARSH -->
                     <div class="d-flex ">
-                    <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
-                        <input class=" rounded form-control form-control-dark me-3 " type="text" placeholder="Search"
-                            aria-label="Search">
+                        <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
+                            <input class=" rounded form-control form-control-dark me-3 " type="text"
+                                placeholder="Search" aria-label="Search">
+                        </div>
+                        <i class="fal fa-bell align-self-center"></i>
                     </div>
-                    <i class="fal fa-bell align-self-center"></i>
-                   </div>
                 </div>
 
                 <!-- title and button  -->
                 <div class=" d-flex main-container  container bg-light  justify-content-between py-3">
                     <div>
-                      <p class="fw-bold "> Payment Details </p>
-                  </div>
-    
-                  <div>
-                    <i class="fal fa-bell align-self-center"></i>
-                      
-                 </div>
+                        <p class="fw-bold  ps-3"> Payment Details </p>
+                    </div>
+
+                    <div>
+                        <i class="far fa-sort text-info"></i>
+
+                    </div>
                     <!-- <hr class="bg-dark"> -->
                 </div>
-                
-             <!-- table   -->
 
-             <div  class="d-flex">
-                <table class="table table-borderless   ">
-                    <thead class="bg-light text-muted ">
-                      <tr class="py-3 " >
-                       
-                        <th scope="col">Name</th>
-                        <th scope="col">Payment Schedule</th>
-                        <th scope="col">Bill Number</th>
-                        <th scope="col">Amount Paid</th>
-                        <th scope="col">Balance amount</th>
-                        <th scope="col"> Date </th>
-                        <th scope="col"> </th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-striped">
-                      <tr class="py-3 ">
-                        <td>username</td>
-                        <td>karthi@gmail.com</td>
-                        <td>7305477760</td>
-                        <td>1234567305477760</td>
-                        <td>08-Dec,2021</td>
-                        <td>
-                            <i class="far fa-eye pe-3 text-info"></i>
-                        </td>
-                      </tr>
-                      <tr class="py-3">
-                      
-                        <td>username</td>
-                        <td>karthi@gmail.com</td>
-                        <td>7305477760</td>
-                        <td>1234567305477760</td>
-                        <td>08-Dec,2021</td>
-                        <td>
-                            <i class="far fa-eye pe-3 text-info"></i>
-                        </td>
-                      </tr>
-                      <tr class="py-3 ">
-                     
-                        <td>username</td>
-                        <td>karthi@gmail.com</td>
-                        <td>7305477760</td>
-                        <td>1234567305477760</td>
-                        <td>08-Dec,2021</td>
-                        <td>
-                            <i class="far fa-eye pe-3 text-info"></i>
-                        </td>
-                      </tr>
-                      <tr class="py-3 ">
-                    
-                        <td>username</td>
-                        <td>karthi@gmail.com</td>
-                        <td>7305477760</td>
-                        <td>1234567305477760</td>
-                        <td>08-Dec,2021</td>
-                        <td>
-                            <i class="far fa-eye pe-3 text-info"></i>
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
+                <!-- table   -->
+
+                <div class="d-flex">
+                    <table class="table table-borderless  mx-5 ">
+                        <thead class="bg-light text-black-50">
+                            <tr class="py-3 ">
+
+                                <th scope="col">Name</th>
+                                <th scope="col">Payment Schedule</th>
+                                <th scope="col">Bill Number</th>
+                                <th scope="col">Amount Paid</th>
+                                <th scope="col">Balance amount</th>
+                                <th scope="col"> Date </th>
+                                <th scope="col"> </th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-striped">
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <button type="button" class="btn  btn-sm px-3">
+                                        <i class="far fa-eye pe-3 text-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <button type="button" class="btn  btn-sm px-3">
+                                        <i class="far fa-eye pe-3 text-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <button type="button" class="btn  btn-sm px-3">
+                                        <i class="far fa-eye pe-3 text-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <button type="button" class="btn  btn-sm px-3">
+                                        <i class="far fa-eye pe-3 text-info"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
 
 
-                
+
             </div>
         </div>
     </div>
