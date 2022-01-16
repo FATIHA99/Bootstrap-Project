@@ -17,16 +17,16 @@
   }
 
  
-  .nav-link:hover {
+  .nav-item:hover {
     background: #00C1FE;
   
   }
   
 
-  .return {
+  /* .return {
     position: absolute;
     right: 81%;
-  }
+  } */
   .cards .carditems{
   border-radius: 8px;
   width: 220px;
@@ -66,4 +66,20 @@
     .image {
         width: 98%;
     }
+}
+
+
+
+/* --------------- student  */
+/* .main-container {
+    left: 17%;
+  
+    top: 9%;
+} */
+.tableau {
+    position: absolute;
+    top: 20%;
+}
+.img {
+    width: 10px;
 }
