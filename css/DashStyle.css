@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
 .fal {
     color: gray;
   }
@@ -16,17 +20,6 @@
     height: 15vh;
   }
 
- 
-  /* .nav-item:hover {
-    background: #00C1FE;
-  
-  }
-   */
-
-  /* .return {
-    position: absolute;
-    right: 81%;
-  } */
   .cards .carditems{
   border-radius: 8px;
   width: 220px;
@@ -57,7 +50,7 @@
 .card__items--gradient i{
   color:#FFFFFF;
 }
-#nbr{
+.nbr{
   position: absolute;
   right: 10px;
   bottom: 10px;
@@ -81,5 +74,10 @@ background-color: red;
   color: #ACACAC;
   font-size: 12px; 
 }
-
+.tableau tr:nth-child(2n) {
+background-color: white;
+}
+/* .ligne {
+  border-radius: 20%;
+} */
 
