@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <meta name="description"
+        content=" E-classe Le site officiel des classes de l'école YouCode  / Si vous etes actuellement  un étiduant  YouCode creer votre compte   ">
+    <meta name="keywords" content="E-classe, etudient , payment, admin ,youcode">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/DashStyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body class="bg-light">
+    <!-- header  -->
+    <main class="container-fluid position-sticky ">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3  col-lg-2 col-xl-2 px-sm-2 px-0 side-nav">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
+
+                    <div class="logo">
+                        <h1 class="border-start border-info border-5 fw-bold ">
+                            E-classe
+                        </h1>
+                    </div>
+                    <div class="d-inline-flex flex-column  justify-content-center row">
+                        <!-- IMAGE  -->
+                        <!-- <div class="container-image "> -->
+                        <img src="ressources/Image1.png" class=" mt-5  rounded-circle image" alt="...">
+                        <!-- </div> -->
+                        <p class="text-center fw-bold"> admin name </p>
+                        <p class="text-center text-info"> Admin</p>
+                    </div>
+
+                    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxx SIDE BAR xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item ">
+
+                            <a href="dashbord.html" class="nav-link  align-middle px-0 text-dark">
+                                <i class="fas fa-home me-4"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                                <i class="far fa-bookmark me-4"></i> <span class="ms-1 d-none d-sm-inline">Course</span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Students.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="far fa-graduation-cap me-3"></i><span
+                                    class="ms-1 d-none d-sm-inline">Students</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="Payment.html" data-bs-toggle="collapse"
+                                class="nav-link px-0 align-middle text-dark ">
+                                <i class="far fa-usd-square me-3"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Payment</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-dark">
+                                <i class="far fa-file-chart-line me-4"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Reports</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link px-0 align-middle text-dark">
+                                <i class="fal fa-sliders-v-square me-3"></i> <span
+                                    class="ms-1 d-none d-sm-inline">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex text-dark mt-5 d-flex">
+
+                        <button type="button" onclick="window.location.href = 'index.html';"
+                            class="btn log-out d-flex btn-sm ">
+                            <span class="d-none   d-sm-block">
+                                Log out
+                            </span>
+                            <i class="fal fa-sign-out-alt mb-sm-4  my-2   mx-3 pl-sm-0 icon-out  "></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col p-0 ">
+                <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx content  xxxxxxxxxxxxxxxxxxxxxxx -->
+                <!-- header -->
+                <div
+                    class=" navbar navbar-light  bg-white  col-12  d-flex  flex-column  flex-md-row     justify-content-sm-between align-content-start  px-3">
+
+                    <i class="fal fa-caret-circle-down fa-rotate-90 align-self-start "></i>
+
+                    <!-- SEARSH -->
+                    <div class="d-flex ">
+                        <div class=" d-flex align-items-end justify-content-md-end mt-3 mt-md-0">
+                            <input class=" rounded form-control form-control-dark me-3 " type="text"
+                                placeholder="Search" aria-label="Search">
+                        </div>
+                        <i class="fal fa-bell align-self-center"></i>
+                    </div>
+                </div>
+
+                <!-- title and button  -->
+                <div class=" d-flex   container bg-light  justify-content-sm-between  py-3">
+                    <div>
+                        <p class="fw-bold  ps-3"> Payment Details </p>
+                    </div>
+
+                    <div class="ps-5">
+                        <i class="far fa-sort text-info"></i>
+
+                    </div>
+                    <!-- <hr class="bg-dark"> -->
+                </div>
+
+                <!--  xxxxxxxxxxxxxxxxxxxxx table xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+
+                <div class="d-flex table-responsive ">
+                    <table class="table tableau table-borderless  mx-5 ">
+                        <thead class="bg-light  table-head">
+                            <tr class="py-3 ">
+                                <th scope="col">Name</th>
+                                <th scope="col">Payment Schedule</th>
+                                <th scope="col">Bill Number</th>
+                                <th scope="col">Amount Paid</th>
+                                <th scope="col">Balance amount</th>
+                                <th scope="col"> Date </th>
+                                <th scope="col" class="d-none">exe-tool</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-striped">
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <i class="far fa-eye pe-3 text-info"></i>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <i class="far fa-eye pe-3 text-info"></i>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <i class="far fa-eye pe-3 text-info"></i>
+                                </td>
+                            </tr>
+                            <tr class="py-3 ">
+                                <td>Karthi</td>
+                                <td>First</td>
+                                <td>00012223</td>
+                                <td>DHS 100,000</td>
+                                <td>DHS 500,000</td>
+                                <td>05-Jan,2022</td>
+                                <td>
+                                    <i class="far fa-eye pe-3 text-info"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
