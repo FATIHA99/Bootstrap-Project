@@ -9,15 +9,12 @@ body {
   .side-nav {
     /* height: 100vh; */
     background: #FAFFC1;
-
-   
   }
   .image {
-
     width: 10vw;
     height: 15vh;
   }
-
+ /* cards  */
   .cards .carditems{
   border-radius: 8px;
   width: 220px;
@@ -53,6 +50,7 @@ body {
   right: 10px;
   bottom: 10px;
 }
+
 @media screen and (max-width: 992px) {
     .image {
         width: 98%;

@@ -11,18 +11,17 @@
   <meta name="keywords" content="E-classe, etudient , payment, admin ,youcode">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@100&family=Oleo+Script&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@100&family=Oleo+Script&display=swap'); */
     body {
       background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%);
       width: 100%;
       height: 100vh;
     }
 
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 576px) { 
       body {
       background: white;
-    
-    }
+           }
     }
     .sign-in {
       height: 95vh;
@@ -74,6 +73,9 @@
 
   </div>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 
 </html>
