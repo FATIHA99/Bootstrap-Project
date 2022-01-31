@@ -1,0 +1,40 @@
+[
+    
+   
+    {   "id":"1",
+        "image": "ressources/p0.jpg",
+        "name": "Karthi",
+        "email": "first",
+        "phone": "001234",
+        "encrol number": "123451234 DHS",
+        "date of admission": "05-Jan,2022"
+    },
+    {
+        "id":"2",
+        "image": "ressources/p0.jpg",
+        "name": "Karthi",
+        "email": "first",
+        "phone": "001234",
+        "encrol number": "123451234 DHS",
+        "date of admission": "05-Jan,2022"
+    },
+    {
+        "id":"4",
+        "image": "ressources/p0.jpg",
+        "name": "Karthi",
+        "email": "first",
+        "phone": "001234",
+        "encrol number": "123451234 DHS",
+        "date of admission": "05-Jan,2022"
+    },
+    {
+        "id":"3",
+        "image": "ressources/p0.jpg",
+        "name": "Karthi",
+        "email": "first",
+        "phone": "001234",
+        "encrol number": "123451234 DHS",
+        "date of admission": "05-Jan,2022"
+    }
+  
+]

@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
+.fal {
+    color: gray;
+  }
+
+  .side-nav {
+    /* height: 100vh; */
+    background: #FAFFC1;
+
+   
+  }
+  .image {
+
+    width: 10vw;
+    height: 15vh;
+  }
+
+  /* .cards .carditems{
+  border-radius: 8px;
+  width: 220px;
+  height: 150px;
+} */
+
+.carditems--blue{
+  background-color:#F0F9FF;
+}
+.carditems--blue i{
+  color: #74C1ED;
+}
+.carditems--rose{
+  background-color:#FEF6FB;
+}
+.carditems--rose i{
+  color:#EE95C5;
+}
+.carditems--yellow{
+  background-color:#FEFBEC;
+}
+.carditems--yellow i{
+  color:#00C1FE;
+}
+.carditems--gradient{
+  background: linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+.card__items--gradient i{
+  color:#FFFFFF;
+}
+.nbr{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+@media screen and (max-width: 992px) {
+    .image {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 576px) {
+  .log-out {
+background-color: red;
+
+  }
+  .icon-out {
+    color: aliceblue;
+  }
+}
+
+.table-head  {
+  color: #ACACAC;
+  font-size: 12px; 
+}
+.tableau tr:nth-child(2n) {
+background-color: white;
+}
+
+
