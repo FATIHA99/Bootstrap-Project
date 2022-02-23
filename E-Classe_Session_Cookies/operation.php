@@ -2,30 +2,27 @@
  //----------------------     CONNEXION    ----------------------------------------
 
 
-
 function connection()
 {
             try {
+
                 return new PDO('mysql:host=localhost;dbname=e_classe_db;charset=utf8','root','');  
                 } catch(Exception $e) 
                 {
-                return 'ERROR ' .$e->getMessage();
+                return 'ERROR '.$e->getMessage();
                 } 
 }  
 $con = connection();
 
 
-
-
-   
   //----------------------      CREATE    ----------------------------------------
 
 
 
-
-
 if(isset($_POST['save']))
-{    try {
+{   
+     try {     
+                            
                             $name=$_POST['name'];
                             $email=$_POST['email'];
                             $phone=$_POST['phone'];
@@ -34,10 +31,12 @@ if(isset($_POST['save']))
 
                             $req =$con->prepare('INSERT INTO students(name ,email ,phone ,encrolNumber,dateOfAdmission) VALUES (?,?,?,?,?);');   
                             $req -> execute(array($name,$email,$phone,$encrolNumber,$date));
+                          
+                             header("Location: students.php");
      } catch (Exeption $e) {
                             echo 'ERROR ' .$e->getMessage();
      }
-     header("Location: students.php");
+    
 }
 
 
@@ -48,6 +47,7 @@ if(isset($_POST['save']))
 if (isset($_GET['delete'])) {
    try {
                 $id = $_GET['delete'];
+
                 $req =$con->prepare("DELETE FROM students WHERE id_student=?");
                 $req -> execute(array($id));
                 header("Location: students.php");
@@ -65,20 +65,22 @@ if (isset($_GET['delete'])) {
 
 
 
-if( isset ($_POST['update'])  )
-{  try {  
-                                $Id      =  $_POST['id'];
-                                $Name    =  $_POST['name'];
-                                $Email   =  $_POST['email'];
-                                $Phone   =  $_POST['phone'];
-                                $Number  =  $_POST['number'];
-                                $Date    =  $_POST['date'];
-       
-                                $req =$con->prepare('UPDATE students SET name= ?, email= ?, phone=? , encrolNumber=?, dateOfAdmission=? WHERE id_student=?');
-                                $req -> execute(array($Name,$Email,$Phone,$Number,$Date,$Id));
-                                header("Location: students.php");
+if( isset ($_POST['update']))
+{
+      try {  
+                        $Id      =  $_POST['id'];
+                        $Name    =  $_POST['name'];
+                        $Email   =  $_POST['email'];
+                        $Phone   =  $_POST['phone'];
+                        $Number  =  $_POST['number'];
+                        $Date    =  $_POST['date'];
+
+                        $req =$con->prepare('UPDATE students SET name= ?, email= ?, phone=? , encrolNumber=?, dateOfAdmission=? WHERE id_student=?');
+                        $req -> execute(array($Name,$Email,$Phone,$Number,$Date,$Id));
+                        header("Location: students.php");
+
     } catch (Exeption $e) {
-                                echo 'ERROR ' .$e->getMessage();
+                         echo 'ERROR ' .$e->getMessage();
     }
 
 }
@@ -92,9 +94,10 @@ if( isset ($_POST['update'])  )
 
 if(isset($_GET['id'])){
     $id =$_GET['id'];
-    $req= $con->prepare('SELECT * FROM students WHERE id_student= ?');
+    $req = $con->prepare('SELECT * FROM students WHERE id_student= ?');
     $req -> execute(array($id));
     $row = $req->fetch();
+
                                 $name   =  $row['name'];
                                 $email  =  $row['email'];
                                 $phone  =  $row['phone'];
@@ -113,6 +116,7 @@ if(isset($_GET['view'])){
     $req= $con->prepare('SELECT * FROM payment_details WHERE id_payment= ? ');
     $req -> execute(array($id));
     $row = $req->fetch();
+
                                 $name    = $row['name'];
                                 $pay     = $row['paymentSchdule'];
                                 $bill    = $row['billNumber'];
@@ -146,21 +150,21 @@ if(isset($_GET['view'])){
                     if($nbrligne>0)
                     {   
                               $row   =  $user -> fetch();
+                            
+                              $_SESSION["login"]   = true;
 
-                              $id    =  $row['id_user'];
-                              $name  =  $row['name'];
-                              $email =  $row['Email'];
-                              $pass  =  $row['Pass'];
-                              
-                              //  pour afficher le nom dans dashboard 
-                              $_SESSION["name"]   = $name;  
-                              //  pour remember me 
-                              $_SESSION["email"]  = $email;
-                              $_SESSION["pass"]   = $pass;
-                              // security
-                              $_SESSION["id"]     =  $id;
+                            //   the value of cookies 
+                              $_SESSION["email"] =  $row['Email'];                           
+                              $_SESSION["pass"]  =  $row['Pass'];
 
-                              header("location:dashbord.php");    
+                            //   pour aficher le nom
+                              $_SESSION["name"]   =  $row['name'];
+
+
+                            //   to logout in 24 hours 
+                              $_SESSION['start']=time();
+                              $_SESSION['end']=$_SESSION['start']+24*3600;
+                              header("location:dashbord.php");          
                     }
                     else
                     {
@@ -174,18 +178,18 @@ if(isset($_GET['view'])){
         
             if(isset($_POST['check'])){
 
-                setcookie('email',$email,time()+24*3600);
-                setcookie('password',$pass,time()+24*3600);
+                setcookie('email', $_SESSION["email"],time()+24*3600);
+                setcookie('password',$_SESSION["pass"],time()+24*3600);
             }
 
 // -------------------  logout  ---------------------------
 
-    if(isset($_GET['logout']))
-    {  
-      session_destroy();
-      header("location:login.php");
+        if(isset($_GET['logout']))
+        {  session_unset();
+          session_destroy();
+          header("location:login.php");
 
-    }
+        }
 
 
 ?>

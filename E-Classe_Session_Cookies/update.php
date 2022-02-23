@@ -9,8 +9,9 @@
             <h3> update student   </h3>
         </div>
         <div class="card-body bg-dark">
-                   <!-- form update  student  -->
-            <form method="POST" action="operation.php?id=<?php echo $_GET['update_id']; ?> ">
+                   <!-- form update  student    ?id=<?php
+                    // echo $_GET['update_id']; ?>   -->
+            <form method="POST" action="operation.php">
 
                   <!-- hidden id  -->
                    <input type="hidden" name="id"              value=<?php  echo  $id ?> >
@@ -24,7 +25,7 @@
                 
                 <div class="form-group">
                     <label>Email</label>
-                    <input name="email" class="form-control  "   value=  <?php  echo $email ?>>
+                    <input name="email" class="form-control"   value=  <?php  echo $email ?>>
                    
                 </div>
 

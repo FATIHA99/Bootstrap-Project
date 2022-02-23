@@ -4,7 +4,7 @@
     $courses=$con->query('SELECT  count(*) FROM courses');
     $sum_paid=$con->query('SELECT SUM(amountPaid) from payment_details');
 ?>
-<div class="cards d-flex gap-3 justify-content-center mt-2">
+<div class="cards d-flex flex-wrap gap-3 justify-content-center mt-2">
 
                     <div class="carditems carditems--blue col-md-3  col-sm-2  m-2  position-relative">
                         <div class="cardstudents d-flex flex-column gap-2 mt-3 mx-3">
@@ -12,7 +12,7 @@
                             <span>Students</span>
                         </div>
                         <div class="cardnbr-students">
-                            <span class="h5 fw-bolder fs-2  nbr"><?php   echo  $nbr_student ->fetchColumn() ;?> </span>
+                            <span class="h5 fw-bolder  fs-5   nbr"><?php   echo  $nbr_student ->fetchColumn() ;?> </span>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@
                             <span>Course</span>
                         </div>
                         <div class="cardnbr-course">
-                            <span class="h5 fw-bolder fs-2 nbr"><?php     echo $courses->fetchColumn(); ?></span>
+                            <span class="h5 fw-bolder  fs-5  nbr"><?php     echo $courses->fetchColumn(); ?></span>
                         </div>
                     </div>
 
@@ -35,7 +35,7 @@
                             <span>Payments</span>
                         </div>
                         <div class="cardpayments">
-                            <span class="h5 fw-bolder fs-2  nbr">DHS <?php    echo $sum_paid->fetchColumn(); ?></span>
+                            <span class=" fw-bolder   fs-5  nbr">DHS <?php    echo $sum_paid->fetchColumn(); ?></span>
                         </div>
                     </div>
 
@@ -44,6 +44,6 @@
                             <i class="fal fa-user h3"></i>
                             <span>Users</span>
                         </div>
-                        <span class="h5 fw-bolder fs-2  nbr">3</span>
+                        <span class="h5 fw-bolder   fs-5  nbr">3</span>
                     </div>
                 </div>

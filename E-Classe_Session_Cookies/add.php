@@ -1,5 +1,5 @@
  <?php include 'header.php'; 
- include 'operation.php';
+//  include 'operation.php';
  ?>
 <div class="container w-50 mt-5 ">
     <div class="card">
@@ -13,35 +13,35 @@
                     <!-- name -->
                             <div class="form-group">
                                 <label>Name</label>
-                                <input name="name" class="form-control">
+                                <input name="name" class="form-control" require>
                             </div>
                     <!-- email -->
                             <div class="form-group">
                                 <label>Email</label>
-                                <input name="email" type="email" required class="form-control ">
+                                <input name="email" type="email" required class="form-control " require>
                             
                             </div>
 
                     <!-- phone  -->
                             <div class="form-group">
                                 <label>Phone</label>
-                                <input name="phone" class="form-control ">
+                                <input name="phone" class="form-control" require>
                             </div>
 
                     <!-- enrol number  -->
                             <div class="form-group">
                                 <label>Encrol Number </label>
-                                <input name="number" class="form-control  ">
+                                <input name="number" class="form-control" require>
                             </div>
 
                     <!-- date of admission -->
                             <div class="form-group">
                                 <label>Date of admission </label>
-                                <input type="date" name="date" class="form-control  ">
+                                <input type="date" name="date" class="form-control" require>
                             </div>
-                        <!-- save  -->
+                    <!-- save  -->
                             <button class="btn btn-success mt-5 " name="save">Submit</button>
-                            <a href = 'dashbord.php' type="submit"  class="btn btn-danger mt-5  text-light" >  Cancel </a>
+                            <a href = 'dashbord.php' class="btn btn-danger mt-5  text-light" >  Cancel </a>
             </form>
         </div>
     </div>

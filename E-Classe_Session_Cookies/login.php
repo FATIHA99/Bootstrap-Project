@@ -1,6 +1,6 @@
 <?php    
 include_once 'operation.php';
-$_SESSION["id"]     =  null;
+// $_SESSION["id"]     =  null;
 ?>
 
 <!DOCTYPE html>
@@ -69,27 +69,31 @@ $_SESSION["id"]     =  null;
 
                     </div>
    <!-- validation de remplissage  -->
-                      <?php  if(@$_GET['Empty']==true) { ?>
-                    <div class="alert alert-danger  text-center pb-0 m-0  ">
 
-                        <?php echo $_GET['Empty'] ; ?>
-                       </div>
- 
+                     <?php  if(isset($_GET['Empty'])) { ?>
+
+                              <div class="alert alert-danger  text-center pb-0 m-0  ">  <?php echo $_GET['Empty'] ; ?>   </div>
+                              
                      <?php } ?>
-                     <?php if(@$_GET['Incorrect']==true){?>
-                    <div class="alert alert-danger  text-center"> <?php echo $_GET['Incorrect'] ; ?> </div>
+
+
+                     <?php if(isset($_GET['Incorrect'])){?>
+
+                               <div class="alert alert-danger  text-center"> <?php echo $_GET['Incorrect'] ; ?> </div>
+
                     <?php } ?>
                       
     <!-- Email -->
                     <div class="mb-1">
                       <label for="exampleInputEmail1" class="form-label">Email</label>
                       <input type="email" name="Email" class="form-control" placeholder="Enter your email" id="exampleInputEmail1"
+                      require
                       value=
                       <?php 
                        if(isset($_COOKIE['email'])) 
                        echo $_COOKIE['email'];
                        ?>
-                      
+                        
                       >
                     </div>
     <!-- password -->
@@ -101,6 +105,7 @@ $_SESSION["id"]     =  null;
                        if(isset($_COOKIE['password'])) 
                        echo $_COOKIE['password'];
                        ?>
+                       
                       >
                     </div>
 
@@ -110,7 +115,7 @@ $_SESSION["id"]     =  null;
      <!-- remember me   -->
                      <div  class="form-check form-switch">  
                       <input  class="form-check-input" type="checkbox" name="check" id="check" ></input> 
-                      <label for="check" > remember me </label>
+                      <label for="check"> remember me </label>
 
                       </div>
 

@@ -29,18 +29,18 @@ $settings="";
 
 </html> 
     <?php 
-          if($_SESSION["id"]==null)
+          if(!$_SESSION["login"])
           { 
             // header("location:login.php"); 
             echo "<script> window.location.href='login.php'; </script>"; 
           }
-       
-        //   if(!isset($_COOKIE['timeout']))
-        //   {   header("location:login.php");
-        //      // echo "<script> window.location.href='login.php'; </script>"; 
-        //   }
-
-
+          $now=time();
+          if($now>$_SESSION['end'])
+          {
+              session_unset();
+              session_destroy();
+              header("location:login.php");
+          }
 
 
         ?>

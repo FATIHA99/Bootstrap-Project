@@ -22,16 +22,18 @@
                     </div>
                     <div>
                         <i class="far fa-sort text-info me-3 h5 "></i>
+
+    <!--   add student  -->
                         <a href="add.php" class="btn btn-info  text-light">ADD NEW STUDENT</a>
                     </div>
                 </div>
                 <!-- TABLEAU -->
 
-                <div class=" mx-3 table-responsive">
+                <div class="mx-3 table-responsive">
                   <table class="table">
                      <thead class="bg-light  table-head ">
                             <tr class="border-top ">
-                                
+                            <th scope="col">image</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">phone</th>
@@ -41,11 +43,13 @@
                             </tr>
                        </thead>
          <?php
-               
-               $req =$con->query('SELECT * from students');
-                while( $ligne=$req->fetch()) :  ?>
+            // affichage   
+                       $req =$con->query('SELECT * from students');
+                        while( $ligne=$req->fetch()) :  ?>
+                         <!-- foreach($ligne as $value ) -->
                
                         <tr class= "border-5  border-light bg-white align-middle  ligne">
+                        <td class='py-3'> <img style="width: 60px; height:30 px;" src ="ressources/Ima.png"></td> 
                             <td class='py-3'> <?php  echo $ligne['name']; ?></td> 
                             <td class='py-3'> <?php  echo $ligne['email']; ?></td> 
                             <td class='py-3'> <?php  echo $ligne['phone'];?></td> 
@@ -63,7 +67,10 @@
                             </a>
                             </td>
                         </tr>
-              <?php endwhile; ?>
+                       <?php endwhile; ?>
+
+
+
          
                 </table>
 
@@ -74,3 +81,19 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<?php 
+          if(!$_SESSION["login"])
+          { 
+            // header("location:login.php"); 
+            echo "<script> window.location.href='login.php'; </script>"; 
+          }
+
+          $now=time();
+          if($now>$_SESSION['end'])
+          {
+              session_unset();
+              session_destroy();
+              header("location:login.php");
+          }
+ ?>

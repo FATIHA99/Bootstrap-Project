@@ -16,13 +16,13 @@ if(isset($_SESSION["name"]))
                 <div class="d-flex flex-column align-items-center  px-3 pt-2  min-vh-100">
 
                     <div class="logo">
-                        <h1 class="border-start border-info border-5 fw-bold ">
-                            E-classe
-                        </h1>
+                        <h2 class="border-start border-info border-5 fw-bold ">
+                            E-C<span class="d-none d-md-inline ">lasse </span>
+                        </h2>
                     </div>
 
                     <div class="d-inline-flex flex-column  justify-content-center row">
-                        <img src="ressources/Image1.png" class=" mt-5  rounded-circle image " alt="...">
+                        <img src="ressources/Image1.png" class=" mt-5  rounded-circle image  d-none  d-md-inline" alt="image">
                         <p class="text-center fw-bold">   <?php  echo   $NAME ; ?></p>
                         <p class="text-center text-info"> Admin</p>
                     </div>
@@ -32,50 +32,50 @@ if(isset($_SESSION["name"]))
                         id="menu">
 
                         <li class="nav-item ">
-                            <a href="dashbord.php" class="nav-link <?php  echo   $home ; ?>  ps-md-3 pe-md-5 align-middle  text-dark">
-                                <i class="fas fa-home me-4"></i> <span class="fw-bolder ms-1 d-none d-sm-inline">Home</span>
+                            <a href="dashbord.php" class="nav-link <?php  echo   $home ; ?>    align-middle  text-dark">
+                                <i class="fas fa-home me-3 "></i> <span class="fw-bolder d-none d-sm-inline">Home</span>
                             </a>
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link <?php  echo   $course ; ?> ps-2 align-middle text-dark">
-                                <i class="far fa-bookmark me-4"></i> <span class="fw-bolder ms-1 d-none d-sm-inline">Course</span>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link <?php  echo   $course ; ?>  align-middle text-dark">
+                                <i class="far fa-bookmark  me-3"></i> <span class="fw-bolder  d-none d-sm-inline">Course</span>
                             </a>
                         </li>
 
 
                         <li class="nav-item ">
-                            <a href="Students.php" class="nav-link <?php  echo   $students ; ?>   ps-2 pe-5  align-middle text-dark">
-                                <i class="far fa-graduation-cap me-3"></i><span
-                                    class="fw-bolder ms-1 d-none d-sm-inline">Students</span>
+                            <a href="Students.php" class="nav-link <?php  echo   $students ; ?>    align-middle text-dark">
+                                <i class="far fa-graduation-cap me-3 "></i><span
+                                    class="fw-bolder d-none d-sm-inline">Students</span>
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="Payment.php" class="nav-link <?php  echo  $payment ; ?>  ps-2 pe-5  align-middle text-dark">
-                            <i class="far fa-usd-square me-3"></i><span
-                                    class="fw-bolder ms-1 d-none d-sm-inline">Payment</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-item ">
-                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link <?php  echo   $reports ; ?> ps-2 align-middle text-dark">
-                                <i class="far fa-file-chart-line me-4"></i> <span
-                                    class="fw-bolder  ms-1 d-none d-sm-inline">Reports</span>
+                            <a href="Payment.php" class="nav-link <?php  echo  $payment ; ?>   align-middle text-dark">
+                            <i class="far fa-usd-square me-3 "></i><span
+                                    class="fw-bolder d-none d-sm-inline">Payment</span>
                             </a>
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class=" fw-bolder nav-link <?php echo   $settings ; ?> ps-2  align-middle text-dark">
-                                <i class="fal fa-sliders-v-square me-3"></i>
-                                 <span class="ms-1 d-none d-sm-inline">Settings</span>
+                        <a href="#submenu3" data-bs-toggle="collapse" class="nav-link <?php  echo   $reports ; ?> align-middle text-dark">
+                                <i class="far fa-file-chart-line  me-3"></i> <span
+                                    class="fw-bolder  d-none d-sm-inline">Reports</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a href="#" class=" fw-bolder nav-link <?php echo   $settings ; ?>   align-middle text-dark">
+                                <i class="fal fa-sliders-v-square me-3 "></i>
+                                 <span class="d-none d-sm-inline">Settings</span>
                             </a>
                         </li>
                         <li class="mt-5">
             
                     
-                        <a href="operation.php?logout" class=" nav-link px-0 align-middle text-dark ">
-                        <span class="ms-1  d-none d-sm-inline">logout</span>
-                        <i class="fal fa-sign-out-alt mb-sm-4  text-dark  icon-out  "></i>
+                        <a href="operation.php?logout" class=" nav-link  align-middle text-dark ">
+                        <span class="  d-none d-sm-inline">logout</span>
+                        <i class="fal fa-sign-out-alt  text-dark  icon-out  "></i>
                         </a>
 
                     </li>
