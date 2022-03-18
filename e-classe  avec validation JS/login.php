@@ -57,6 +57,12 @@ include_once 'operation.php';
   <div class="d-flex justify-content-center align-items-center vh-100 ">
    <!--  method post  -->
                   <form class="formulaire  p-3 sign-in bg-white col-12 col-sm-8  col-md-6 col-lg-5  col-xl-4  col-xxl-3" action="operation.php"  method="POST"   >
+                  <?php  if(isset($_GET['register'])) { ?>
+
+<div class="alert alert-success  text-center pb-0 m-0  ">  <?php echo $_GET['register'] ; ?>   </div>
+
+<?php } ?>
+
                     <div class="">
                         <h1 class="border-start border-info border-5 fw-bold ms-5"> E-classe</h1>
                     </div>
@@ -72,13 +78,14 @@ include_once 'operation.php';
 
                      <?php  if(isset($_GET['Empty'])) { ?>
 
+                             <!--  empty alert  -->
                               <div class="alert alert-danger  text-center pb-0 m-0  ">  <?php echo $_GET['Empty'] ; ?>   </div>
                               
                      <?php } ?>
 
-
+             
                      <?php if(isset($_GET['Incorrect'])){?>
-
+                                 <!-- incorrect info  alert  -->
                                <div class="alert alert-danger  text-center"> <?php echo $_GET['Incorrect'] ; ?> </div>
 
                     <?php } ?>
@@ -118,18 +125,21 @@ include_once 'operation.php';
                       <label for="check"> remember me </label>
 
                       </div>
+
      <!--    login    -->
                       <button onclick="window.location.href = '';" type="submit" name= "Login" class="btn btn-info  text-light" > 
                         SIGN IN 
                       </button>
-   
+
+                      <button onclick="window.location.href = '';" name= "SignUp" class="btn btn-success  text-light" > 
+                        SIGN UP 
+                      </button>
                     </div>
                     <p class="text-muted text-center">
                       Forgot your password? <a href="#" class="text-decoration-none">Reset Password</a>.
                     </p>
+
                   </form>
-
-
   </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
